@@ -40,7 +40,6 @@ export class LoginComponent {
       this.authService.login(this.loginForm.value.email, this.loginForm.value.password).subscribe({
         next: (response) => {
           if (response.isSuccessful) {
-            debugger;
             localStorage.setItem('currentUser', JSON.stringify(response.user));
             if (response.twoFactorRequired) {
               this.router.navigate(['/verify'], { queryParams: { email: this.loginForm.value.email } });

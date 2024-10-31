@@ -3,24 +3,88 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
-mat-card {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  }
+  
+  mat-card {
     width: 100%;
-    max-width: 500px;
-}
-
-mat-card-title {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1em;
-}
-
-mat-form-field {
-    width: 100%;
-}
-
-button {
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); 
+    color: #fff; 
+  }
+  
+  mat-card-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  mat-form-field {
     width: 100%;
     margin-top: 20px;
-}
+  }
+  
+  mat-form-field .mat-label {
+    color: #ddd;
+  }
+  
+  input.mat-input-element {
+    color: #fff;
+  }
+  
+  .extra-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #bbb;
+  }
+  
+  .forgot-password {
+    text-decoration: none;
+    color: #bbb;
+  }
+  
+  button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    background: linear-gradient(to right, #6a11cb, #7494ca);
+    color: #ffffff  !important;
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #5b0eb2, #2064e2);
+  }
+  
+  mat-error {
+    font-size: 12px;
+    color: #ff8a8a;
+  }
+
+  .user-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+    margin-bottom: 20px;
+  }
+  
+  .user-icon img {
+    width: 90px; 
+    height: 90px;
+    border-radius: 50%; 
+    background-color: rgba(255, 255, 255, 0.082); 
+    padding: 10px;
+  }
+  
+  

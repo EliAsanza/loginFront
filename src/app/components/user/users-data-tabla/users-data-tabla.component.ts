@@ -36,7 +36,6 @@ export class UsersDataTablaComponent implements OnInit {
   constructor(private userService: UserService, private authService: AuthService) { }
 
   ngOnInit(): void {
-    debugger;
     this.userService.getData().subscribe(data => {
       this.dataSource.data = data;
     });
